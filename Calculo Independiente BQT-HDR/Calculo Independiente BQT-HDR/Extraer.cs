@@ -59,7 +59,7 @@ namespace Calculo_Independiente_BQT_HDR
             return indice;
         }
 
-        public static int extraerPuntosYLineas(string[] fid, List<Punto> puntos, List<Linea> lineas, int lineaInicio=0)
+        public static int extraerPuntosYLineas(string[] fid, List<PuntoDosis> puntos, List<Linea> lineas, int lineaInicio=0)
         {
             int inicio = buscarSubStringEnFid(fid, "Reference point", lineaInicio);
             inicio = buscarSubStringEnFid(fid, "x [cm] y [cm] z [cm] Total dose [cGy]", inicio);
@@ -71,7 +71,7 @@ namespace Calculo_Independiente_BQT_HDR
                 string[] partes = aux.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                 if (partes.Length == 5)
                 {
-                    Punto punto = Punto.extraer(partes);
+                    PuntoDosis punto = PuntoDosis.extraer(partes);
                     puntos.Add(punto);
                 }
                 else if (partes.Length == 1)

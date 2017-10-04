@@ -25,16 +25,19 @@ namespace Calculo_Independiente_BQT_HDR
             {
                 string[] fid = Extraer.cargar(openFileDialog1.FileName);
                 //Linea.extraer(fid, 106, 109);
+                List<Linea> lineas = new List<Linea>();
+                List<PuntoDosis> puntos = new List<PuntoDosis>();
+                Extraer.extraerPuntosYLineas(fid, puntos, lineas, 0);
                 List<Aplicador> aplicadores = new List<Aplicador>();
                 Extraer.extraerAplicadores(fid, aplicadores);
+                List<Vector> vectores = new List<Vector>();
+                vectores = Aplicador.directoresTodasLasParadas(aplicadores[0]);
             }
         }
 
         private void extraerPuntosYLineas(string[] fid)
         {
-            List<Linea> lineas = new List<Linea>();
-            List<Punto> puntos = new List<Punto>();
-            Extraer.extraerPuntosYLineas(fid, puntos, lineas, 0);
+            
         }
     }
 }

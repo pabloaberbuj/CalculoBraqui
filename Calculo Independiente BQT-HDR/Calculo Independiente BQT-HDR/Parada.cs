@@ -24,5 +24,7 @@ namespace Calculo_Independiente_BQT_HDR
             };
             return parada;
         }
+
+        
     }
 }

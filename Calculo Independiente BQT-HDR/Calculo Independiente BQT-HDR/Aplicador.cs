@@ -36,6 +36,37 @@ namespace Calculo_Independiente_BQT_HDR
             }
             return aplicador;
         }
+
+        public static Vector directorPromediodeUnaParada(Aplicador aplicador, int indiceParada)
+        {
+            Vector directorParada = new Vector();
+            if (indiceParada==0)
+            {
+                directorParada = Vector.difEntreParadas(aplicador.paradas[indiceParada], aplicador.paradas[indiceParada + 1]);
+            }
+            else if (indiceParada == aplicador.paradas.Count()-1)
+            {
+                directorParada = Vector.difEntreParadas(aplicador.paradas[indiceParada-1], aplicador.paradas[indiceParada]);
+            }
+            else
+            {
+                Vector director1 = Vector.difEntreParadas(aplicador.paradas[indiceParada], aplicador.paradas[indiceParada + 1]);
+                Vector director2 = Vector.difEntreParadas(aplicador.paradas[indiceParada - 1], aplicador.paradas[indiceParada]);
+                directorParada = Vector.promedio(director1, director2);
+            }
+            return directorParada;
+        }
+
+        public static List<Vector> directoresTodasLasParadas(Aplicador aplicador)
+        {
+            List<Vector> directores = new List<Vector>();
+            for (int i=0;i<aplicador.paradas.Count();i++)
+            {
+                Vector director = directorPromediodeUnaParada(aplicador, i);
+                directores.Add(director);
+            }
+            return directores;
+        }
     }
 
 

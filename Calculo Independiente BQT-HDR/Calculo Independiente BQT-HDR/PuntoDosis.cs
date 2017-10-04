@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculo_Independiente_BQT_HDR
 {
-    public class Punto
+    public class PuntoDosis
     {
         public string nombre { get; set; }
         public double x { get; set; }
@@ -14,9 +14,9 @@ namespace Calculo_Independiente_BQT_HDR
         public double z { get; set; }
         public double dosis { get; set; }
 
-        public static Punto extraer(string[] partes)
+        public static PuntoDosis extraer(string[] partes)
         {
-            Punto punto = new Punto()
+            PuntoDosis punto = new PuntoDosis()
             {
                 nombre = partes[0],
                 x = Convert.ToDouble(partes[1]),
