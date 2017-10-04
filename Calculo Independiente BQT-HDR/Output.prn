@@ -1,0 +1,136 @@
+
+  BrachyVision                                          Varian Medical Systems
+  Software version: Brachytherapy Planning 11.0.47
+
+
+  No seeds  Brief Report for "Plan1"
+
+  Patient Name: ANA MARIA JUAREZ     Source wire serial number: 24-07-4542-004-12181
+  Patient Sex: Female                Source calibration date: lunes, 01 de mayo de 2
+  Patient Birthdate: sábado, 18 de ene                                      Sr                                       oo                                        u                                          rd                                          ce                                           e                                              1                                             c9                                              a6                                               l9                                                ibration activity: 10000.00 mCi (nomi
+  Patient ID: 1743437                Source half life: 73.83 d
+  Treatment site:                    Treatment date: martes, 03 de octubre de 2017 0
+  Total prescription: 600 cGy in 1 fra                                      Sc                                       ot                                        ui                                         ro                                          cn                                           es                                             .                                             treatment activity: 10000.00 mCi (nomina
+  Dwell times are displayed for a sing                                      Tl                                       oe                                        t                                          af                                          lr                                            a                                            ac                                             it                                              ri                                                o                                                kn                                                 e.                                                  rma strength: 4016.86 cGy cm² (nomi
+  Plan Created: martes, 03 de octubre                                       Td                                       oe                                        t                                          a2                                          l0                                            1                                            C7                                             u                                               r1                                               i2                                                e:                                                  1                                                  s8                                                   e:                                                    c3                                                     o0                                                      nds: 3553.00 (nominal)
+  Last Saved: martes, 03 de octubre de                                      T                                        o2                                        t0                                         a1                                          l7                                                                                         t1                                             r2                                              e:                                               a1                                                t1                                                 m:                                                  e2                                                   n1                                                    t time: 355.30 s
+  Dose Calculation Medium: Homogeneous                                      Total time per PDR pulse: -
+  PDR pulse interval: -              PDR number of pulses: -
+  Applicator: tandem, Channel: 1, Source Model: GMP Ir-192 HDR, Tx Strength: 40700.00
+   Position [cm]130.00  129.50  129.00  128.50  128.00  127.50  127.00  126.50  12
+   Time [s]       20.9    20.9    20.9    20.9    20.9    20.9    20.9    20.9    
+   Position [cm]125.00
+   Time [s]       20.9
+
+  Applicator: ovizq, Channel: 2, Source Model: GMP Ir-192 HDR, Tx Strength: 40700.00 
+   Position [cm]130.00  129.50  129.00
+   Time [s]       20.9    20.9    20.9
+
+  Applicator: ovder, Channel: 3, Source Model: GMP Ir-192 HDR, Tx Strength: 40700.00 
+   Position [cm]130.00  129.50  129.00
+   Time [s]       20.9    20.9    20.9
+
+
+
+  No seeds
+
+  Reference point: 
+                   x [cm] y [cm] z [cm] Total dose [cGy], 1 fraction(s)
+  vejiga1          0.24   -2.95  -2.84  202.4
+  recto1           -0.65  2.54   -0.88  360.5
+  alar
+                   x [cm] y [cm] z [cm] Total dose [cGy], 1 fraction(s)
+                   -2.06  0.00   2.01   599.6
+                   1.91   0.00   1.96   602.8
+
+  ======================================
+  martes, 03 de octubre de 2017 12:18:59     User: pa
+  ======================================
+  Imaging Geometry: Orthogonal
+  Beam1 Label: AP
+  Angle [deg]: 0.000
+  Focus To Film Dist [cm]: 115.000
+  Isocenter To Film Dist [cm]: 12.321
+  Magnification Factor: 1.120
+  Beam2 Label: LAT
+  Angle [deg]: 90.000
+  Focus To Film Dist [cm]: 130.000
+  Isocenter To Film Dist [cm]: 21.667
+  Magnification Factor: 1.200
+  Imaging Plane:Transversal
+
+  Geometrical information
+
+
+
+
+
+  Instituto de Oncologia Angel H. Roff                                      Po                                       r,                                        i                                          nB                                          tu                                           ee                                            dn                                              o                                              ms                                               a                                                 rA                                                 ti                                                  er                                                   se                                                    ,s                                                      ,                                                      0                                                        3A                                                         r                                                         dg                                                          ee                                                            n                                                            ot                                                             ci                                                              tn                                                               ua                                                                bre de 2017 14:40:04 
+  Treatment plan of ANAJUAREZ.                                                    
+  Plan name: Plan1 - ( Treatment Appro                                      Pv                                       ae                                        gd                                         e                                           :)                                              1/2
+  BrachyVision                                          Varian Medical Systems
+  Software version: Brachytherapy Planning 11.0.47
+
+
+  No seeds
+  Points: tandem
+          x [cm] y [cm] z [cm]
+          -0.01  -0.11  4.73   (Dwell Position,   20.9 s)
+          -0.05  -0.06  4.23   (Dwell Position,   20.9 s)
+          -0.07  -0.03  3.73   (Dwell Position,   20.9 s)
+          -0.09  -0.02  3.23   (Dwell Position,   20.9 s)
+          -0.08  -0.04  2.73   (Dwell Position,   20.9 s)
+          -0.08  -0.06  2.23   (Dwell Position,   20.9 s)
+          -0.08  -0.08  1.73   (Dwell Position,   20.9 s)
+          -0.07  -0.10  1.23   (Dwell Position,   20.9 s)
+          -0.07  -0.12  0.73   (Dwell Position,   20.9 s)
+          -0.07  -0.14  0.23   (Dwell Position,   20.9 s)
+          -0.07  -0.17  -0.27  (Dwell Position,   20.9 s)
+  Points: ovizq
+          x [cm] y [cm] z [cm]
+          1.34   -0.00  -0.53  (Dwell Position,   20.9 s)
+          1.30   -0.02  -1.03  (Dwell Position,   20.9 s)
+          1.26   -0.04  -1.53  (Dwell Position,   20.9 s)
+  Points: ovder
+          x [cm] y [cm] z [cm]
+          -1.98  -0.02  -0.52  (Dwell Position,   20.9 s)
+          -1.94  -0.04  -1.01  (Dwell Position,   20.9 s)
+          -1.89  -0.06  -1.51  (Dwell Position,   20.9 s)
+
+
+  Electronic Approvals
+
+  Planning approved by: cp   Date: martes, 03 de octubre de 2017 12:23:34
+  Treatment approved by: pa   Date: martes, 03 de octubre de 2017 12:23:41
+  No seeds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Instituto de Oncologia Angel H. Roff                                      Po                                       r,                                        i                                          nB                                          tu                                           ee                                            dn                                              o                                              ms                                               a                                                 rA                                                 ti                                                  er                                                   se                                                    ,s                                                      ,                                                      0                                                        3A                                                         r                                                         dg                                                          ee                                                            n                                                            ot                                                             ci                                                              tn                                                               ua                                                                bre de 2017 14:40:04 
+  Treatment plan of ANAJUAREZ.                                                    
+  Plan name: Plan1 - ( Treatment Appro                                      Pv                                       ae                                        gd                                         e                                           :)                                              2/2

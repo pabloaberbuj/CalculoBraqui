@@ -1,0 +1,136 @@
+
+  BrachyVision                                          Varian Medical Systems
+  Software version: Brachytherapy Planning 11.0.47
+
+
+  No seeds  Brief Report for "Plan1"
+
+  Patient Name: ANDREA MARIANA  URBINA                                      Source wire serial number: 24-07-4542-004-12181
+  Patient Sex: Female                Source calibration date: lunes, 01 de mayo de 2
+  Patient Birthdate: sábado, 31 de mar                                      Sz                                       oo                                        u                                          rd                                          ce                                           e                                              1                                             c9                                              a7                                               l3                                                ibration activity: 10000.00 mCi (nomi
+  Patient ID: 1743436                Source half life: 73.83 d
+  Treatment site:                    Treatment date: jueves, 28 de septiembre de 201
+  Total prescription: 700 cGy in 1 fra                                      Sc                                       ot                                        ui                                         ro                                          cn                                           es                                             .                                             treatment activity: 10000.00 mCi (nomina
+  Dwell times are displayed for a sing                                      Tl                                       oe                                        t                                          af                                          lr                                            a                                            ac                                             it                                              ri                                                o                                                kn                                                 e.                                                  rma strength: 4689.54 cGy cm² (nomi
+  Plan Created: jueves, 28 de septiemb                                      Tr                                       oe                                        t                                          ad                                          le                                                                                         C2                                             u0                                              r1                                               i7                                                e                                                   9                                                  s:                                                   e4                                                    c4                                                     o:                                                      n2                                                       d6                                                        s: 4148.00 (nominal)
+  Last Saved: jueves, 28 de septiembre                                      T                                        od                                        te                                         a                                           l2                                            0                                            t1                                             r7                                              e                                                a9                                                t:                                                 m3                                                  e6                                                   n:                                                    t4                                                      6                                                      time: 414.80 s
+  Dose Calculation Medium: Homogeneous                                      Total time per PDR pulse: -
+  PDR pulse interval: -              PDR number of pulses: -
+  Applicator: tandem, Channel: 1, Source Model: GMP Ir-192 HDR, Tx Strength: 40700.00
+   Position [cm]130.00  129.50  129.00  128.50  128.00  127.50  127.00  126.50  12
+   Time [s]       24.4    24.4    24.4    24.4    24.4    24.4    24.4    24.4    
+   Position [cm]125.00
+   Time [s]       24.4
+
+  Applicator: ovizq, Channel: 2, Source Model: GMP Ir-192 HDR, Tx Strength: 40700.00 
+   Position [cm]130.00  129.50  129.00
+   Time [s]       24.4    24.4    24.4
+
+  Applicator: ovder, Channel: 3, Source Model: GMP Ir-192 HDR, Tx Strength: 40700.00 
+   Position [cm]130.00  129.50  129.00
+   Time [s]       24.4    24.4    24.4
+
+
+
+  No seeds
+
+  Reference point: 
+                   x [cm] y [cm] z [cm] Total dose [cGy], 1 fraction(s)
+  vejiga4          0.25   -2.42  -1.29  441.1
+  recto4
+                   x [cm] y [cm] z [cm] Total dose [cGy], 1 fraction(s)
+                   -0.32  2.95   -0.04  411.2
+                   -0.34  2.87   -0.80  398.2
+  alar
+                   x [cm] y [cm] z [cm] Total dose [cGy], 1 fraction(s)
+                   -1.97  0.00   2.06   689.8
+                   2.08   0.00   1.91   709.6
+
+  ======================================
+  jueves, 28 de septiembre de 2017 9:44:57     User: pa
+  ======================================
+  Imaging Geometry: Orthogonal
+  Beam1 Label: AP
+  Angle [deg]: 0.000
+  Focus To Film Dist [cm]: 115.000
+  Isocenter To Film Dist [cm]: 12.321
+  Magnification Factor: 1.120
+  Beam2 Label: LAT
+  Angle [deg]: 90.000
+  Focus To Film Dist [cm]: 140.000
+  Isocenter To Film Dist [cm]: 24.298
+  Magnification Factor: 1.210
+  Imaging Plane:Transversal
+
+
+
+
+  Instituto de Oncologia Angel H. Roff                                      Po                                       r,                                        i                                          nB                                          tu                                           ee                                            dn                                              o                                              ms                                               a                                                 rA                                                 ti                                                  er                                                   se                                                    ,s                                                      ,                                                      0                                                        3A                                                         r                                                         dg                                                          ee                                                            n                                                            ot                                                             ci                                                              tn                                                               ua                                                                bre de 2017 14:41:16 
+  Treatment plan of ANDREA MARIANAURBINA.                                            
+  Plan name: Plan1 - ( Treatment Appro                                      Pv                                       ae                                        gd                                         e                                           :)                                              1/2
+  BrachyVision                                          Varian Medical Systems
+  Software version: Brachytherapy Planning 11.0.47
+
+
+  No seeds
+  Geometrical information
+  Points: tandem
+          x [cm] y [cm] z [cm]
+          0.12   -0.03  4.74   (Dwell Position,   24.4 s)
+          0.12   0.01   4.24   (Dwell Position,   24.4 s)
+          0.12   0.02   3.74   (Dwell Position,   24.4 s)
+          0.12   0.03   3.24   (Dwell Position,   24.4 s)
+          0.10   0.01   2.74   (Dwell Position,   24.4 s)
+          0.09   -0.00  2.24   (Dwell Position,   24.4 s)
+          0.08   -0.02  1.74   (Dwell Position,   24.4 s)
+          0.07   -0.03  1.24   (Dwell Position,   24.4 s)
+          0.06   -0.05  0.74   (Dwell Position,   24.4 s)
+          0.04   -0.06  0.24   (Dwell Position,   24.4 s)
+          0.03   -0.08  -0.26  (Dwell Position,   24.4 s)
+  Points: ovizq
+          x [cm] y [cm] z [cm]
+          1.14   0.08   -0.48  (Dwell Position,   24.4 s)
+          1.12   0.05   -0.98  (Dwell Position,   24.4 s)
+          1.09   0.02   -1.48  (Dwell Position,   24.4 s)
+  Points: ovder
+          x [cm] y [cm] z [cm]
+          -1.79  0.23   -0.38  (Dwell Position,   24.4 s)
+          -1.75  0.19   -0.87  (Dwell Position,   24.4 s)
+          -1.70  0.14   -1.37  (Dwell Position,   24.4 s)
+
+
+  Electronic Approvals
+
+  Planning approved by: cp   Date: jueves, 28 de septiembre de 2017 9:48:44
+  Treatment approved by: pa   Date: jueves, 28 de septiembre de 2017 9:48:55
+  No seeds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Instituto de Oncologia Angel H. Roff                                      Po                                       r,                                        i                                          nB                                          tu                                           ee                                            dn                                              o                                              ms                                               a                                                 rA                                                 ti                                                  er                                                   se                                                    ,s                                                      ,                                                      0                                                        3A                                                         r                                                         dg                                                          ee                                                            n                                                            ot                                                             ci                                                              tn                                                               ua                                                                bre de 2017 14:41:16 
+  Treatment plan of ANDREA MARIANAURBINA.                                            
+  Plan name: Plan1 - ( Treatment Appro                                      Pv                                       ae                                        gd                                         e                                           :)                                              2/2
