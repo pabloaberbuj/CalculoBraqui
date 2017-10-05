@@ -9,7 +9,7 @@ namespace Calculo_Independiente_BQT_HDR
     public class Aplicador
     {
         public string nombre { get; set; }
-        public List<Parada> paradas { get; set; }
+        public List<Fuente> fuentes { get; set; }
 
         public static Aplicador extraerAplicador(string[] fid, int lineaInicio)
         {
@@ -18,7 +18,7 @@ namespace Calculo_Independiente_BQT_HDR
             Aplicador aplicador = new Aplicador()
             {
                 nombre = (fid[indNombre].Split(new[] { ':' }, StringSplitOptions.RemoveEmptyEntries))[1],
-                paradas = new List<Parada>(),
+                fuentes = new List<Fuente>(),
             };
 
             int inicio = indNombre + 2;
@@ -31,38 +31,38 @@ namespace Calculo_Independiente_BQT_HDR
             {
                 string aux = fid[i];
                 string[] partes = aux.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                Parada parada = Parada.extraer(partes);
-                aplicador.paradas.Add(parada);
+                Fuente fuente = Calculo_Independiente_BQT_HDR.Fuente.extraer(partes);
+                aplicador.fuentes.Add(fuente);
             }
             return aplicador;
         }
 
-        public static Vector directorPromediodeUnaParada(Aplicador aplicador, int indiceParada)
+        public static Vector Fuente(Aplicador aplicador, int indiceFuente)
         {
-            Vector directorParada = new Vector();
-            if (indiceParada==0)
+            Vector directorFuente = new Vector();
+            if (indiceFuente==0)
             {
-                directorParada = Vector.difEntreParadas(aplicador.paradas[indiceParada], aplicador.paradas[indiceParada + 1]);
+                directorFuente = Vector.normalizar(Vector.difEntreFuentes(aplicador.fuentes[indiceFuente], aplicador.fuentes[indiceFuente + 1]));
             }
-            else if (indiceParada == aplicador.paradas.Count()-1)
+            else if (indiceFuente == aplicador.fuentes.Count()-1)
             {
-                directorParada = Vector.difEntreParadas(aplicador.paradas[indiceParada-1], aplicador.paradas[indiceParada]);
+                directorFuente = Vector.normalizar(Vector.difEntreFuentes(aplicador.fuentes[indiceFuente-1], aplicador.fuentes[indiceFuente]));
             }
             else
             {
-                Vector director1 = Vector.difEntreParadas(aplicador.paradas[indiceParada], aplicador.paradas[indiceParada + 1]);
-                Vector director2 = Vector.difEntreParadas(aplicador.paradas[indiceParada - 1], aplicador.paradas[indiceParada]);
-                directorParada = Vector.promedio(director1, director2);
+                Vector director1 = Vector.difEntreFuentes(aplicador.fuentes[indiceFuente], aplicador.fuentes[indiceFuente + 1]);
+                Vector director2 = Vector.difEntreFuentes(aplicador.fuentes[indiceFuente - 1], aplicador.fuentes[indiceFuente]);
+                directorFuente = Vector.normalizar(Vector.promedio(director1, director2));
             }
-            return directorParada;
+            return directorFuente;
         }
 
-        public static List<Vector> directoresTodasLasParadas(Aplicador aplicador)
+        public static List<Vector> directoresTodasLasFuentes(Aplicador aplicador)
         {
             List<Vector> directores = new List<Vector>();
-            for (int i=0;i<aplicador.paradas.Count();i++)
+            for (int i=0;i<aplicador.fuentes.Count();i++)
             {
-                Vector director = directorPromediodeUnaParada(aplicador, i);
+                Vector director = Fuente(aplicador, i);
                 directores.Add(director);
             }
             return directores;

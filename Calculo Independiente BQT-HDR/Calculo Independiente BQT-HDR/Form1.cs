@@ -31,7 +31,7 @@ namespace Calculo_Independiente_BQT_HDR
                 List<Aplicador> aplicadores = new List<Aplicador>();
                 Extraer.extraerAplicadores(fid, aplicadores);
                 List<Vector> vectores = new List<Vector>();
-                vectores = Aplicador.directoresTodasLasParadas(aplicadores[0]);
+                vectores = Aplicador.directoresTodasLasFuentes(aplicadores[0]);
             }
         }
 

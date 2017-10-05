@@ -97,7 +97,7 @@ namespace Calculo_Independiente_BQT_HDR
             {
                 Aplicador aplicador = Aplicador.extraerAplicador(fid, inicio);
                 aplicadores.Add(aplicador);
-                inicio += aplicador.paradas.Count()+2;
+                inicio += aplicador.fuentes.Count()+2;
             }
             return fin;
         }
