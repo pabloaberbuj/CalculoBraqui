@@ -28,29 +28,61 @@ namespace Calculo_Independiente_BQT_HDR
                 tabla.cargarValores();
                 Plan plan = new Plan();
                 Calcular.calcularTodo(fid, plan, tabla);
+                cargarDatosPaciente(fid, plan);
                 DGV_Aplicadores.DataSource = plan.aplicadores;
-                DGV_Puntos.DataSource = todosLosPuntos(plan);
+                DGV_Puntos.DataSource = Calcular.todosLosPuntos(plan);
+                chequearTolerancia(DGV_Puntos, 3, 3);
             }
         }
 
-        private List<PuntoDosis> todosLosPuntos(Plan plan)
+        private void cargarLabel(Label label, string valor)
         {
-            List<PuntoDosis> todosLosPuntos = new List<PuntoDosis>();
-            foreach (PuntoDosis p in plan.puntos)
+            if (valor != "")
             {
-                todosLosPuntos.Add(p);
+                label.Text = valor;
+                label.Visible = true;
             }
-            foreach (Linea l in plan.lineas)
+            else
             {
-                foreach (PuntoDosis p in l.puntos)
+                label.Text = "";
+                label.Visible = false;
+            }
+        }
+
+        private void cargarDatosPaciente(string[] fid, Plan plan)
+        {
+            cargarLabel(L_Nombre, Extraer.extraerNombre(fid));
+            cargarLabel(L_ID, Extraer.extraerID(fid));
+            cargarLabel(L_Prescripcion, Extraer.extraerPrescripcion(fid)+" cGy");
+            chequeoPrescripcion(fid, plan);
+        }
+
+        private void chequeoPrescripcion(string[] fid, Plan plan)
+        {
+            double suma = 0;
+            Linea lineaPrescripcion = plan.lineas[plan.lineas.Count() - 1];
+            foreach (PuntoDosis p in lineaPrescripcion.puntos)
+            {
+                suma += p.dosisTPS;
+            }
+            double promedio = suma / lineaPrescripcion.puntos.Count();
+            string escribir = promedio.ToString() + " cGy (en" + lineaPrescripcion.nombre + ")";
+            cargarLabel(L_DosisPuntosA, escribir);
+        }
+
+        private void chequearTolerancia(DataGridView dgv, int numColumna, double tolerancia)
+        {
+            foreach (DataGridViewRow fila in dgv.Rows)
+            {
+                if (Math.Abs(Convert.ToDouble(fila.Cells[numColumna].Value)) <= tolerancia)
                 {
-                    todosLosPuntos.Add(p);
+                    fila.Cells[numColumna].Style.BackColor = Color.LightGreen;
+                }
+                else
+                {
+                    fila.Cells[numColumna].Style.BackColor = Color.Red;
                 }
             }
-            return todosLosPuntos;
         }
-        
-
-        
     }
 }

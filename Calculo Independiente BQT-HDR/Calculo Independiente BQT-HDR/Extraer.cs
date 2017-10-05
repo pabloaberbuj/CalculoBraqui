@@ -15,9 +15,9 @@ namespace Calculo_Independiente_BQT_HDR
             return File.ReadAllLines(archivo);
         }
 
-        public static string extraerString(string[] fid, int linea)
+        public static string extraerString(string[] fid, int linea, char sep ='=' )
         {
-            string aux = fid[linea]; string[] aux2 = aux.Split('='); string salida = aux2[1];
+            string aux = fid[linea]; string[] aux2 = aux.Split(sep); string salida = aux2[1];
             return salida;
         }
         public static double extraerDouble(string[] fid, int linea)
@@ -110,6 +110,26 @@ namespace Calculo_Independiente_BQT_HDR
             return fin;
         }
 
+        public static string extraerNombre(string[] fid)
+        {
+            int linea = buscarSubStringEnFid(fid, "Patient Name: ");
+            string[] sep = { "Source" } ;
+            return (extraerString(fid, linea,':')).Split( sep,StringSplitOptions.None  )[0];
+        }
+
+        public static string extraerID(string[] fid)
+        {
+            int linea = buscarSubStringEnFid(fid, "Patient ID: ");
+            string[] sep = { "Source" };
+            return (extraerString(fid, linea, ':')).Split(sep, StringSplitOptions.None)[0];
+        }
+
+        public static string extraerPrescripcion(string[] fid)
+        {
+            int linea = buscarSubStringEnFid(fid, "Total prescription: ");
+            string[] sep = { "cGy" };
+            return (extraerString(fid, linea, ':')).Split(sep, StringSplitOptions.None)[0];
+        }
 
        
     }

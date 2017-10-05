@@ -37,8 +37,12 @@
             this.L_Nombre = new System.Windows.Forms.Label();
             this.DGV_Aplicadores = new System.Windows.Forms.DataGridView();
             this.DGV_Puntos = new System.Windows.Forms.DataGridView();
+            this.L_DosisPuntosA = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.DGV_hyt = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Aplicadores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Puntos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_hyt)).BeginInit();
             this.SuspendLayout();
             // 
             // BT_Cargar
@@ -82,7 +86,7 @@
             // 
             this.L_Prescripcion.AutoSize = true;
             this.L_Prescripcion.Cursor = System.Windows.Forms.Cursors.Default;
-            this.L_Prescripcion.Location = new System.Drawing.Point(92, 112);
+            this.L_Prescripcion.Location = new System.Drawing.Point(137, 112);
             this.L_Prescripcion.Name = "L_Prescripcion";
             this.L_Prescripcion.Size = new System.Drawing.Size(35, 13);
             this.L_Prescripcion.TabIndex = 6;
@@ -93,7 +97,7 @@
             // 
             this.L_ID.AutoSize = true;
             this.L_ID.Cursor = System.Windows.Forms.Cursors.Default;
-            this.L_ID.Location = new System.Drawing.Point(92, 86);
+            this.L_ID.Location = new System.Drawing.Point(137, 86);
             this.L_ID.Name = "L_ID";
             this.L_ID.Size = new System.Drawing.Size(35, 13);
             this.L_ID.TabIndex = 5;
@@ -104,7 +108,7 @@
             // 
             this.L_Nombre.AutoSize = true;
             this.L_Nombre.Cursor = System.Windows.Forms.Cursors.Default;
-            this.L_Nombre.Location = new System.Drawing.Point(92, 60);
+            this.L_Nombre.Location = new System.Drawing.Point(137, 60);
             this.L_Nombre.Name = "L_Nombre";
             this.L_Nombre.Size = new System.Drawing.Size(35, 13);
             this.L_Nombre.TabIndex = 4;
@@ -114,7 +118,7 @@
             // DGV_Aplicadores
             // 
             this.DGV_Aplicadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_Aplicadores.Location = new System.Drawing.Point(24, 151);
+            this.DGV_Aplicadores.Location = new System.Drawing.Point(24, 229);
             this.DGV_Aplicadores.Name = "DGV_Aplicadores";
             this.DGV_Aplicadores.Size = new System.Drawing.Size(316, 189);
             this.DGV_Aplicadores.TabIndex = 7;
@@ -122,16 +126,47 @@
             // DGV_Puntos
             // 
             this.DGV_Puntos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_Puntos.Location = new System.Drawing.Point(381, 151);
+            this.DGV_Puntos.Location = new System.Drawing.Point(381, 229);
             this.DGV_Puntos.Name = "DGV_Puntos";
-            this.DGV_Puntos.Size = new System.Drawing.Size(416, 189);
+            this.DGV_Puntos.Size = new System.Drawing.Size(446, 189);
             this.DGV_Puntos.TabIndex = 8;
+            // 
+            // L_DosisPuntosA
+            // 
+            this.L_DosisPuntosA.AutoSize = true;
+            this.L_DosisPuntosA.Cursor = System.Windows.Forms.Cursors.Default;
+            this.L_DosisPuntosA.Location = new System.Drawing.Point(137, 151);
+            this.L_DosisPuntosA.Name = "L_DosisPuntosA";
+            this.L_DosisPuntosA.Size = new System.Drawing.Size(35, 13);
+            this.L_DosisPuntosA.TabIndex = 10;
+            this.L_DosisPuntosA.Text = "label4";
+            this.L_DosisPuntosA.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(21, 138);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(110, 26);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Dosis promedio en\r\nlinea de prescripción: ";
+            // 
+            // DGV_hyt
+            // 
+            this.DGV_hyt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_hyt.Location = new System.Drawing.Point(212, 457);
+            this.DGV_hyt.Name = "DGV_hyt";
+            this.DGV_hyt.Size = new System.Drawing.Size(316, 189);
+            this.DGV_hyt.TabIndex = 11;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(830, 655);
+            this.ClientSize = new System.Drawing.Size(858, 711);
+            this.Controls.Add(this.DGV_hyt);
+            this.Controls.Add(this.L_DosisPuntosA);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.DGV_Puntos);
             this.Controls.Add(this.DGV_Aplicadores);
             this.Controls.Add(this.L_Prescripcion);
@@ -145,6 +180,7 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Aplicadores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Puntos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_hyt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,6 +197,9 @@
         private System.Windows.Forms.Label L_Nombre;
         private System.Windows.Forms.DataGridView DGV_Aplicadores;
         private System.Windows.Forms.DataGridView DGV_Puntos;
+        private System.Windows.Forms.Label L_DosisPuntosA;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView DGV_hyt;
     }
 }
 

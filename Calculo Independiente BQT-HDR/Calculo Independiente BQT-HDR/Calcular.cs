@@ -205,5 +205,46 @@ namespace Calculo_Independiente_BQT_HDR
             Extraer.extraerPuntosYLineas(fid, plan.puntos, plan.lineas);
             tasasDosis(plan, tabla);
         }
+
+        public static List<HyT> listaHsyTs(Plan plan)
+        {
+            List<HyT> lista = new List<HyT>();
+            foreach (Aplicador ap in plan.aplicadores)
+            {
+                foreach (Fuente f in ap.fuentes)
+                {
+                    foreach (PuntoDosis p in todosLosPuntos(plan))
+                    {
+                        HyT hyt = new HyT()
+                        {
+                            aplicador = ap.nombre,
+                            fuente = ap.fuentes.IndexOf(f),
+                            punto = p.nombre,
+                            H = paramH(ap, f, p),
+                            T = paramT(ap, f, p),
+                        };
+                        lista.Add(hyt);
+                    }
+                }
+            }
+            return lista;
+        }
+
+        public static List<PuntoDosis> todosLosPuntos(Plan plan)
+        {
+            List<PuntoDosis> todosLosPuntos = new List<PuntoDosis>();
+            foreach (PuntoDosis p in plan.puntos)
+            {
+                todosLosPuntos.Add(p);
+            }
+            foreach (Linea l in plan.lineas)
+            {
+                foreach (PuntoDosis p in l.puntos)
+                {
+                    todosLosPuntos.Add(p);
+                }
+            }
+            return todosLosPuntos;
+        }
     }
 }
