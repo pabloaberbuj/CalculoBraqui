@@ -17,27 +17,40 @@ namespace Calculo_Independiente_BQT_HDR
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BT_CargarClick(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Filter = "Archivos prn(.prn)|*.prn|All Files (*.*)|*.*";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 string[] fid = Extraer.cargar(openFileDialog1.FileName);
-                //Linea.extraer(fid, 106, 109);
-                List<Linea> lineas = new List<Linea>();
-                List<PuntoDosis> puntos = new List<PuntoDosis>();
-                Extraer.extraerPuntosYLineas(fid, puntos, lineas, 0);
-                List<Aplicador> aplicadores = new List<Aplicador>();
-                Extraer.extraerAplicadores(fid, aplicadores);
-                List<Vector> vectores = new List<Vector>();
-                vectores = Aplicador.directoresTodasLasFuentes(aplicadores[0]);
+                TablaHyT tabla = new TablaHyT();
+                tabla.cargarValores();
+                Plan plan = new Plan();
+                Calcular.calcularTodo(fid, plan, tabla);
+                DGV_Aplicadores.DataSource = plan.aplicadores;
+                DGV_Puntos.DataSource = todosLosPuntos(plan);
             }
         }
 
-        private void extraerPuntosYLineas(string[] fid)
+        private List<PuntoDosis> todosLosPuntos(Plan plan)
         {
-            
+            List<PuntoDosis> todosLosPuntos = new List<PuntoDosis>();
+            foreach (PuntoDosis p in plan.puntos)
+            {
+                todosLosPuntos.Add(p);
+            }
+            foreach (Linea l in plan.lineas)
+            {
+                foreach (PuntoDosis p in l.puntos)
+                {
+                    todosLosPuntos.Add(p);
+                }
+            }
+            return todosLosPuntos;
         }
+        
+
+        
     }
 }

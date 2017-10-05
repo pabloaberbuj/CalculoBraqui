@@ -3,13 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
+using System.Windows.Forms;
 
 namespace Calculo_Independiente_BQT_HDR
 {
     public class Aplicador
     {
+        [DisplayName("Nombre")]
         public string nombre { get; set; }
+        [Browsable(false)]
         public List<Fuente> fuentes { get; set; }
+        [DisplayName("Nº de fuentes")]
+        public int numeroFuentes { get; set; }
 
         public static Aplicador extraerAplicador(string[] fid, int lineaInicio)
         {
@@ -34,39 +40,11 @@ namespace Calculo_Independiente_BQT_HDR
                 Fuente fuente = Calculo_Independiente_BQT_HDR.Fuente.extraer(partes);
                 aplicador.fuentes.Add(fuente);
             }
+            aplicador.numeroFuentes = aplicador.fuentes.Count();
             return aplicador;
         }
 
-        public static Vector Fuente(Aplicador aplicador, int indiceFuente)
-        {
-            Vector directorFuente = new Vector();
-            if (indiceFuente==0)
-            {
-                directorFuente = Vector.normalizar(Vector.difEntreFuentes(aplicador.fuentes[indiceFuente], aplicador.fuentes[indiceFuente + 1]));
-            }
-            else if (indiceFuente == aplicador.fuentes.Count()-1)
-            {
-                directorFuente = Vector.normalizar(Vector.difEntreFuentes(aplicador.fuentes[indiceFuente-1], aplicador.fuentes[indiceFuente]));
-            }
-            else
-            {
-                Vector director1 = Vector.difEntreFuentes(aplicador.fuentes[indiceFuente], aplicador.fuentes[indiceFuente + 1]);
-                Vector director2 = Vector.difEntreFuentes(aplicador.fuentes[indiceFuente - 1], aplicador.fuentes[indiceFuente]);
-                directorFuente = Vector.normalizar(Vector.promedio(director1, director2));
-            }
-            return directorFuente;
-        }
-
-        public static List<Vector> directoresTodasLasFuentes(Aplicador aplicador)
-        {
-            List<Vector> directores = new List<Vector>();
-            for (int i=0;i<aplicador.fuentes.Count();i++)
-            {
-                Vector director = Fuente(aplicador, i);
-                directores.Add(director);
-            }
-            return directores;
-        }
+        
     }
 
 

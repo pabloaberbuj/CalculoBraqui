@@ -12,15 +12,15 @@ namespace Calculo_Independiente_BQT_HDR
         public double y { get; set; }
         public double z { get; set; }
 
-        public static Vector difEntreFuentes(Fuente p1, Fuente p2)
+        public static Vector resta(Vector v1, Vector v2)
         {
-            Vector vector = new Vector()
+            Vector v3 = new Vector()
             {
-                x = p2.x - p1.x,
-                y = p2.y - p1.y,
-                z = p2.z - p1.z,
+                x = v1.x - v2.x,
+                y = v1.y - v2.y,
+                z = v1.z - v2.z,
             };
-            return vector;
+            return v3;
         }
 
         public static Vector promedio(Vector v1, Vector v2)
@@ -34,10 +34,6 @@ namespace Calculo_Independiente_BQT_HDR
             return promedio;
         }
 
-        public static double modulo(Vector v1)
-        {
-            return Math.Sqrt(v1.x * v1.x + v1.y * v1.y + v1.z * v1.z);
-        }
         public static Vector normalizar(Vector v1)
         {
             Vector vN = new Vector()
@@ -49,20 +45,14 @@ namespace Calculo_Independiente_BQT_HDR
             return vN;
         }
 
-        public static Vector vectorDistanciaFuentePunto(Fuente f, PuntoDosis p)
+        public static double modulo(Vector v1)
         {
-            Vector distancia = new Vector()
-            {
-                x = f.x - p.x,
-                y = f.y - p.y,
-                z = f.z - p.z,
-            };
-            return distancia;
+            return Math.Sqrt(v1.x * v1.x + v1.y * v1.y + v1.z * v1.z);
         }
 
-        public static double distanciaFuentePunto(Fuente f,PuntoDosis p)
+        public static double productoEscalar(Vector v1, Vector v2)
         {
-            return modulo(vectorDistanciaFuentePunto(f, p));
+            return v1.x * v2.x + v1.y * v2.y + v1.z * v2.z;
         }
     }
 }

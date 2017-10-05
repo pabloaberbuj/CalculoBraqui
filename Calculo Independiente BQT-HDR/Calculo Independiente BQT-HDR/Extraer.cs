@@ -25,20 +25,28 @@ namespace Calculo_Independiente_BQT_HDR
             return Convert.ToDouble(extraerString(fid, linea));
         }
 
+        public static double[] extraerLineaDouble(string[] fid, int linea)
+        {
+            string aux = extraerString(fid, linea);
+            string[] auxLinea = aux.Split('\t');
+            return auxLinea.Select(s => double.Parse(s, CultureInfo.InvariantCulture)).ToArray();
+        }
+
         public static string extraerFecha(string[] fid, int linea)
         {
             string aux = extraerString(fid, linea);
             return aux.Split(',')[0];
         }
 
-        public static double[,] extraerMatriz(string[] fid, int lineaI, int lineaF, int Tam1, int Tam2)
+        public static double[,] extraerMatriz(string[] fid, int lineaI, int lineaF, int columnas)
         {
-            double[,] M = new double[Tam1, Tam2];
-            for (int i = 0; i < Tam2; i++)
+            int filas = lineaF - lineaI+1;
+            double[,] M = new double[columnas, filas];
+            for (int i = 0; i < filas; i++)
             {
                 string[] stringLinea = fid[lineaI + i].Split('\t');
                 double[] aux1 = stringLinea.Select(s => double.Parse(s, CultureInfo.InvariantCulture)).ToArray();
-                for (int j = 0; j < Tam1; j++)
+                for (int j = 0; j < columnas; j++)
                 {
                     M[j, i] = aux1[j];
                 }

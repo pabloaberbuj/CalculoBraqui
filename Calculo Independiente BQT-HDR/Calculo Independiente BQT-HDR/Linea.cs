@@ -24,10 +24,13 @@ namespace Calculo_Independiente_BQT_HDR
                 string[] partes = aux.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                 PuntoDosis punto = new PuntoDosis()
                 {
-                    x = Convert.ToDouble(partes[0]),
-                    y = Convert.ToDouble(partes[1]),
-                    z = Convert.ToDouble(partes[2]),
-                    dosis = Convert.ToDouble(partes[3]),
+                    posicion = new Vector()
+                    {
+                        x = Convert.ToDouble(partes[0]),
+                        y = Convert.ToDouble(partes[1]),
+                        z = Convert.ToDouble(partes[2]),
+                    },
+                    dosisTPS = Convert.ToDouble(partes[3]),
                     nombre = linea.nombre +"_"+ (i-lineaInicial-1).ToString(),
                 };
                 linea.puntos.Add(punto);
