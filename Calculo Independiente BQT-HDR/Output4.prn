@@ -1,0 +1,139 @@
+
+  BrachyVision                                          Varian Medical Systems
+  Software version: Brachytherapy Planning 11.0.47
+
+
+  No seeds  Brief Report for "Plan3"
+
+  Patient Name: SILVIA VERONICA  CUPOSource wire serial number: 24-07-4542-004-121
+  Patient Sex: Female                Source calibration date: lunes, 01 de mayo de
+  Patient Birthdate: miércoles, 18 de                                       Sf                                       oe                                        ub                                         rr                                          ce                                           er                                             o                                             c                                               ad                                               le                                                i                                                  b1                                                  r9                                                   a7                                                    t6                                                     ion activity: 10000.00 mCi (no
+  Patient ID: 1743483                Source half life: 73.83 d
+  Treatment site:                    Treatment date: lunes, 09 de octubre de 2017 
+  Total prescription: 600 cGy in 1 fra                                      Sc                                       ot                                        ui                                         ro                                          cn                                           es                                             .                                             treatment activity: 10000.00 mCi (nomi
+  Dwell times are displayed for a sing                                      Tl                                       oe                                        t                                          af                                          lr                                            a                                            ac                                             it                                              ri                                                o                                                kn                                                 e.                                                  rma strength: 4211.32 cGy cm² (no
+  Plan Created: lunes, 09 de octubre d                                      Te                                       o                                         t2                                         a0                                          l1                                            7                                            C                                              u1                                              r1                                               i:                                                e4                                                  4                                                  s:                                                   e5                                                    c0                                                     onds: 3725.00 (nominal)
+  Last Saved: lunes, 09 de octubre de                                       T2                                       o0                                        t1                                         a7                                          l                                             1                                            t1                                             r:                                              e4                                               a4                                                t:                                                 m1                                                  e1                                                   nt time: 372.50 s
+  Dose Calculation Medium: Homogeneous                                      Total time per PDR pulse: -
+  PDR pulse interval: -              PDR number of pulses: -
+  Applicator: tandem, Channel: 1, Source Model: GMP Ir-192 HDR, Tx Strength: 40700
+   Position [cm]128.50  128.00  127.50  127.00  126.50  126.00  125.50  125.00
+   Time [s]       36.4    31.2    15.5    14.8    14.9    14.7    30.0    30.0
+
+  Applicator: ovoide izq, Channel: 2, Source Model: GMP Ir-192 HDR, Tx Strength: 4
+   Position [cm]130.00  129.50  129.00
+   Time [s]       30.0    15.0    30.0
+
+  Applicator: ovoide der, Channel: 3, Source Model: GMP Ir-192 HDR, Tx Strength: 4
+   Position [cm]130.00  129.50  129.00
+   Time [s]       30.0    15.0    30.0
+
+
+
+  No seeds
+
+  Reference point: 
+                   x [cm] y [cm] z [cm] Total dose [cGy], 1 fraction(s)
+  vejiga3          1.33   -2.59  -0.55  373.7
+  recto3
+                   x [cm] y [cm] z [cm] Total dose [cGy], 1 fraction(s)
+                   -0.12  3.53   -1.23  245.7
+                   -0.22  3.51   0.39   282.8
+  alar
+                   x [cm] y [cm] z [cm] Total dose [cGy], 1 fraction(s)
+                   -1.99  0.04   2.06   602.9
+                   1.99   0.04   1.92   597.6
+
+  ======================================
+  lunes, 09 de octubre de 2017 11:45:55     User: gal
+  ======================================
+  Imaging Geometry: Orthogonal
+  Beam1 Label: AP
+  Angle [deg]: 0.000
+  Focus To Film Dist [cm]: 115.000
+  Isocenter To Film Dist [cm]: 14.476
+  Magnification Factor: 1.144
+  Beam2 Label: LAT
+  Angle [deg]: 90.000
+  Focus To Film Dist [cm]: 130.000
+  Isocenter To Film Dist [cm]: 27.879
+  Magnification Factor: 1.273
+  Imaging Plane:Transversal
+
+  Geometrical information
+
+
+
+
+
+  Instituto de Oncologia Angel H. Roff                                      Po                                       r,                                        i                                          nB                                          tu                                           ee                                            dn                                              o                                              ls                                               u                                                 nA                                                 ei                                                  sr                                                   ,e                                                     s                                                     0,                                                      9                                                         A                                                        dr                                                         eg                                                           e                                                           on                                                            ct                                                             ti                                                              un                                                               ba                                                                re de 2017 11:59:23
+  Treatment plan of SILVIA VERONICACUPO.                                          
+  Plan name: Plan3 - ( Treatment Appro                                      Pv                                       ae                                        gd                                         e                                           :)                                              1/2
+                                      No seeds
+  BrachyVision                                          Varian Medical Systems
+  Software version: Brachytherapy Planning 11.0.47
+
+
+  No seeds
+  Points: tandem
+          x [cm] y [cm] z [cm]
+          0.06   -0.08  4.01   (Dwell Position,   36.4 s)
+          0.04   -0.00  3.51   (Dwell Position,   31.2 s)
+          0.02   0.04   3.02   (Dwell Position,   15.5 s)
+          0.00   0.04   2.52   (Dwell Position,   14.8 s)
+          -0.02  0.04   2.02   (Dwell Position,   14.9 s)
+          -0.04  0.04   1.52   (Dwell Position,   14.7 s)
+          -0.05  0.04   1.02   (Dwell Position,   30.0 s)
+          -0.05  0.02   0.52   (Dwell Position,   30.0 s)
+          -0.05  0.01   0.02   (Dwell Position,   35.0 s)
+  Points: ovoide izq
+          x [cm] y [cm] z [cm]
+          1.94   0.05   -0.60  (Dwell Position,   30.0 s)
+          1.89   0.04   -1.10  (Dwell Position,   15.0 s)
+          1.83   0.03   -1.60  (Dwell Position,   30.0 s)
+  Points: ovoide der
+          x [cm] y [cm] z [cm]
+          -2.16  0.00   -0.70  (Dwell Position,   30.0 s)
+          -2.11  -0.00  -1.20  (Dwell Position,   15.0 s)
+          -2.06  -0.01  -1.70  (Dwell Position,   30.0 s)
+
+
+  Electronic Approvals
+
+  Planning approved by: cp   Date: lunes, 09 de octubre de 2017 11:56:29
+  Treatment approved by: gal   Date: lunes, 09 de octubre de 2017 11:56:42
+  No seeds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Instituto de Oncologia Angel H. Roff                                      Po                                       r,                                        i                                          nB                                          tu                                           ee                                            dn                                              o                                              ls                                               u                                                 nA                                                 ei                                                  sr                                                   ,e                                                     s                                                     0,                                                      9                                                         A                                                        dr                                                         eg                                                           e                                                           on                                                            ct                                                             ti                                                              un                                                               ba                                                                re de 2017 11:59:23
+  Treatment plan of SILVIA VERONICACUPO.                                          
+  Plan name: Plan3 - ( Treatment Appro                                      Pv                                       ae                                        gd                                         e                                           :)                                              2/2
+                                      No seeds

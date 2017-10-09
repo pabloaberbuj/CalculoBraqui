@@ -9,7 +9,8 @@ namespace Calculo_Independiente_BQT_HDR
 {
     public class TablaHyT
     {
-        public static string file = @"..\..\tablaHyT.txt";
+        //public static string file = @"..\..\tablaHyT.txt";
+        public static string file = @"tablaHyT.txt";
         public double[] etiquetasH { get; set; }
         public double[] etiquetasT { get; set; }
         public double[,] valores { get; set; }

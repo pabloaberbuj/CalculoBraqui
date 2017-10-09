@@ -37,7 +37,7 @@ namespace Calculo_Independiente_BQT_HDR
             {
                 string aux = fid[i];
                 string[] partes = aux.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                Fuente fuente = Calculo_Independiente_BQT_HDR.Fuente.extraer(partes);
+                Fuente fuente = Fuente.extraer(partes);
                 aplicador.fuentes.Add(fuente);
             }
             aplicador.numeroFuentes = aplicador.fuentes.Count();

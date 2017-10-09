@@ -1,0 +1,138 @@
+
+  BrachyVision                                          Varian Medical Systems
+  Software version: Brachytherapy Planning 11.0.47
+
+
+  No seeds  Brief Report for "Plan2"
+
+  Patient Name: MARTA LORENA OCHOA   Source wire serial number: 24-07-4542-004-121
+  Patient Sex: Female                Source calibration date: lunes, 01 de mayo de
+  Patient Birthdate: lunes, 31 de octu                                      Sb                                       or                                        ue                                         r                                           cd                                           ee                                                                                           c1                                              a9                                               l8                                                i3                                                 bration activity: 10000.00 mCi (no
+  Patient ID: 1743085                Source half life: 73.83 d
+  Treatment site:                    Treatment date: lunes, 09 de octubre de 2017 
+  Total prescription: 700 cGy in 1 fra                                      Sc                                       ot                                        ui                                         ro                                          cn                                           es                                             .                                             treatment activity: 10000.00 mCi (nomi
+  Dwell times are displayed for a sing                                      Tl                                       oe                                        t                                          af                                          lr                                            a                                            ac                                             it                                              ri                                                o                                                kn                                                 e.                                                  rma strength: 4228.28 cGy cm² (no
+  Plan Created: lunes, 09 de octubre d                                      Te                                       o                                         t2                                         a0                                          l1                                            7                                            C                                              u1                                              r0                                               i:                                                e3                                                  8                                                  s:                                                   e4                                                    c3                                                     onds: 3740.00 (nominal)
+  Last Saved: lunes, 09 de octubre de                                       T2                                       o0                                        t1                                         a7                                          l                                             1                                            t0                                             r:                                              e3                                               a4                                                t:                                                 m5                                                  e6                                                   nt time: 374.00 s
+  Dose Calculation Medium: Homogeneous                                      Total time per PDR pulse: -
+  PDR pulse interval: -              PDR number of pulses: -
+  Applicator: tandem, Channel: 1, Source Model: GMP Ir-192 HDR, Tx Strength: 40700
+   Position [cm]130.00  129.50  129.00  128.50  128.00  127.50  127.00
+   Time [s]       47.6    42.6    23.1    21.9    22.1    19.8    31.4
+
+  Applicator: ovoide izq, Channel: 2, Source Model: GMP Ir-192 HDR, Tx Strength: 4
+   Position [cm]130.00  129.50  129.00
+   Time [s]       33.1    16.6    33.1
+
+  Applicator: ovoide der, Channel: 3, Source Model: GMP Ir-192 HDR, Tx Strength: 4
+   Position [cm]130.00  129.50  129.00
+   Time [s]       33.1    16.5    33.1
+
+
+
+  No seeds
+
+  Reference point: 
+                   x [cm] y [cm] z [cm] Total dose [cGy], 1 fraction(s)
+  vejiga2          -0.96  -2.43  -0.18  489.5
+  recto2
+                   x [cm] y [cm] z [cm] Total dose [cGy], 1 fraction(s)
+                   -0.01  2.70   -0.56  424.3
+                   -0.17  2.74   0.88   471.7
+  alar
+                   x [cm] y [cm] z [cm] Total dose [cGy], 1 fraction(s)
+                   -1.90  0.15   2.10   695.6
+                   2.12   0.15   1.88   698.8
+
+  ======================================
+  lunes, 09 de octubre de 2017 10:39:44     User: gal
+  ======================================
+  Imaging Geometry: Orthogonal
+  Beam1 Label: AP
+  Angle [deg]: 0.000
+  Focus To Film Dist [cm]: 115.000
+  Isocenter To Film Dist [cm]: 15.087
+  Magnification Factor: 1.151
+  Beam2 Label: LAT
+  Angle [deg]: 90.000
+  Focus To Film Dist [cm]: 140.000
+  Isocenter To Film Dist [cm]: 23.333
+  Magnification Factor: 1.200
+  Imaging Plane:Transversal
+
+  Geometrical information
+
+
+
+
+
+  Instituto de Oncologia Angel H. Roff                                      Po                                       r,                                        i                                          nB                                          tu                                           ee                                            dn                                              o                                              ls                                               u                                                 nA                                                 ei                                                  sr                                                   ,e                                                     s                                                     0,                                                      9                                                         A                                                        dr                                                         eg                                                           e                                                           on                                                            ct                                                             ti                                                              un                                                               ba                                                                re de 2017 11:31:11
+  Treatment plan of MARTAOCHOA.                                                   
+  Plan name: Plan2 - ( Treatment Appro                                      Pv                                       ae                                        gd                                         e                                           :)                                              1/2
+                                      No seeds
+  BrachyVision                                          Varian Medical Systems
+  Software version: Brachytherapy Planning 11.0.47
+
+
+  No seeds
+  Points: tandem
+          x [cm] y [cm] z [cm]
+          0.17   0.19   3.25   (Dwell Position,   47.6 s)
+          0.14   0.23   2.75   (Dwell Position,   42.6 s)
+          0.12   0.20   2.26   (Dwell Position,   23.1 s)
+          0.10   0.17   1.76   (Dwell Position,   21.9 s)
+          0.08   0.14   1.26   (Dwell Position,   22.1 s)
+          0.06   0.10   0.76   (Dwell Position,   19.8 s)
+          0.04   0.07   0.26   (Dwell Position,   31.4 s)
+  Points: ovoide izq
+          x [cm] y [cm] z [cm]
+          1.35   -0.11  -0.25  (Dwell Position,   33.1 s)
+          1.30   -0.14  -0.75  (Dwell Position,   16.6 s)
+          1.24   -0.17  -1.25  (Dwell Position,   33.1 s)
+  Points: ovoide der
+          x [cm] y [cm] z [cm]
+          -1.40  -0.06  -0.14  (Dwell Position,   33.1 s)
+          -1.38  -0.09  -0.63  (Dwell Position,   16.5 s)
+          -1.37  -0.12  -1.13  (Dwell Position,   33.1 s)
+
+
+  Electronic Approvals
+
+  Planning approved by: cp   Date: lunes, 09 de octubre de 2017 10:47:01
+  Treatment approved by: gal   Date: lunes, 09 de octubre de 2017 10:47:27
+  No seeds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Instituto de Oncologia Angel H. Roff                                      Po                                       r,                                        i                                          nB                                          tu                                           ee                                            dn                                              o                                              ls                                               u                                                 nA                                                 ei                                                  sr                                                   ,e                                                     s                                                     0,                                                      9                                                         A                                                        dr                                                         eg                                                           e                                                           on                                                            ct                                                             ti                                                              un                                                               ba                                                                re de 2017 11:31:11
+  Treatment plan of MARTAOCHOA.                                                   
+  Plan name: Plan2 - ( Treatment Appro                                      Pv                                       ae                                        gd                                         e                                           :)                                              2/2
+                                      No seeds

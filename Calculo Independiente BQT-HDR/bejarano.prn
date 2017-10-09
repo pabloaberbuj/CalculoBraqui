@@ -1,0 +1,138 @@
+
+  BrachyVision                                          Varian Medical Systems
+  Software version: Brachytherapy Planning 11.0.47
+
+
+  No seeds  Brief Report for "Plan1"
+
+  Patient Name: PATRICIA EDITH  BEJARA                                      SN                                       oO                                        urce wire serial number: 24-07-4542-004-121
+  Patient Sex: Female                Source calibration date: lunes, 01 de mayo de
+  Patient Birthdate: viernes, 15 de ju                                      Sn                                       oi                                        uo                                         r                                           cd                                           ee                                                                                           c1                                              a9                                               l6                                                i2                                                 bration activity: 10000.00 mCi (no
+  Patient ID: 1743734                Source half life: 73.83 d
+  Treatment site:                    Treatment date: miércoles, 13 de septiembre d
+  Total prescription: 700 cGy in 1 fra                                      Sc                                       ot                                        ui                                         ro                                          cn                                           es                                             .                                             treatment activity: 10000.00 mCi (nomi
+  Dwell times are displayed for a sing                                      Tl                                       oe                                        t                                          af                                          lr                                            a                                            ac                                             it                                              ri                                                o                                                kn                                                 e.                                                  rma strength: 1691.31 cGy cm² (no
+  Plan Created: miércoles, 13 de septi                                      Te                                       om                                        tb                                         ar                                          le                                                                                         Cd                                             ue                                              r                                                i2                                                e0                                                  1                                                  s7                                                   e                                                     c1                                                     o1                                                      n:                                                       d2                                                        s0                                                         ::                                                           5                                                           19                                                            496.00 (nominal)
+  Last Saved: miércoles, 13 de septiem                                      Tb                                       or                                        te                                         a                                           ld                                            e                                            t                                              r2                                              e0                                               a1                                                t7                                                 m                                                   e1                                                   n1                                                    t:                                                      2                                                      t8                                                       i:                                                        m5                                                         e4                                                          : 149.60 s
+  Dose Calculation Medium: Homogeneous                                      Total time per PDR pulse: -
+  PDR pulse interval: -              PDR number of pulses: -
+  Applicator: Cilindro, Channel: 1, Source Model: GMP Ir-192 HDR, Tx Strength: 407
+   Position [cm]130.00  129.50  129.00  128.50
+   Time [s]       56.1    18.7    18.7    56.1
+
+
+
+  No seeds
+
+  Reference point: 
+                   x [cm] y [cm] z [cm] Total dose [cGy], 1 fraction(s)
+  Vejiga1          -0.55  -3.05  -0.58  182.0
+  Recto
+                   x [cm] y [cm] z [cm] Total dose [cGy], 1 fraction(s)
+                   0.42   2.22   1.76   250.5
+                   0.06   1.61   -1.79  332.7
+  Prescripcion
+                   x [cm] y [cm] z [cm] Total dose [cGy], 1 fraction(s)
+                   -1.51  0.00   0.09   699.8
+                   1.51   0.00   -0.08  700.9
+
+  ======================================
+  miércoles, 13 de septiembre de 2017 11:21:53     User: mrc
+  ======================================
+  Imaging Geometry: Orthogonal
+  Beam1 Label: AP
+  Angle [deg]: 0.000
+  Focus To Film Dist [cm]: 115.000
+  Isocenter To Film Dist [cm]: 13.230
+  Magnification Factor: 1.130
+  Beam2 Label: LAT
+  Angle [deg]: 90.000
+  Focus To Film Dist [cm]: 130.000
+  Isocenter To Film Dist [cm]: 25.161
+  Magnification Factor: 1.240
+  Imaging Plane:Transversal
+
+  Geometrical information
+  Points: Cilindro
+          x [cm] y [cm] z [cm]
+          0.06   0.14   0.80   (Dwell Position,   56.1 s)
+          0.02   0.07   0.30   (Dwell Position,   18.7 s)
+          -0.02  0.00   -0.19  (Dwell Position,   18.7 s)
+          -0.05  -0.07  -0.68  (Dwell Position,   56.1 s)
+
+
+  Electronic Approvals
+
+
+
+
+
+  Instituto de Oncologia Angel H. Roff                                      Po                                       r,                                        i                                          nB                                          tu                                           ee                                            dn                                              o                                              ls                                               u                                                 nA                                                 ei                                                  sr                                                   ,e                                                     s                                                     0,                                                      9                                                         A                                                        dr                                                         eg                                                           e                                                           on                                                            ct                                                             ti                                                              un                                                               ba                                                                re de 2017 12:05:44
+  Treatment plan of PATRICIA EDITHBEJARANO.                                       
+  Plan name: Plan1 - ( Treatment Appro                                      Pv                                       ae                                        gd                                         e                                           :)                                              1/2
+                                      No seeds
+  BrachyVision                                          Varian Medical Systems
+  Software version: Brachytherapy Planning 11.0.47
+
+
+  No seeds
+  Planning approved by: cs   Date: miércoles, 13 de septiembre de 2017 11:40:13
+  Treatment approved by: mrc   Date: miércoles, 13 de septiembre de 2017 11:40:39
+  No seeds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Instituto de Oncologia Angel H. Roff                                      Po                                       r,                                        i                                          nB                                          tu                                           ee                                            dn                                              o                                              ls                                               u                                                 nA                                                 ei                                                  sr                                                   ,e                                                     s                                                     0,                                                      9                                                         A                                                        dr                                                         eg                                                           e                                                           on                                                            ct                                                             ti                                                              un                                                               ba                                                                re de 2017 12:05:44
+  Treatment plan of PATRICIA EDITHBEJARANO.                                       
+  Plan name: Plan1 - ( Treatment Appro                                      Pv                                       ae                                        gd                                         e                                           :)                                              2/2
+                                      No seeds

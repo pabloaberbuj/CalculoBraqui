@@ -1,0 +1,138 @@
+
+  BrachyVision                                          Varian Medical Systems
+  Software version: Brachytherapy Planning 11.0.47
+
+
+  No seeds  Brief Report for "Plan3"
+
+  Patient Name: LILIANA  AYUSA       Source wire serial number: 24-07-4542-004-121
+  Patient Sex: Female                Source calibration date: lunes, 01 de mayo de
+  Patient Birthdate:                 Source calibration activity: 10000.00 mCi (no
+  Patient ID: 1742938                Source half life: 73.83 d
+  Treatment site:                    Treatment date: lunes, 09 de octubre de 2017 
+  Total prescription: 600 cGy in 1 fra                                      Sc                                       ot                                        ui                                         ro                                          cn                                           es                                             .                                             treatment activity: 10000.00 mCi (nomi
+  Dwell times are displayed for a sing                                      Tl                                       oe                                        t                                          af                                          lr                                            a                                            ac                                             it                                              ri                                                o                                                kn                                                 e.                                                  rma strength: 4288.20 cGy cm² (no
+  Plan Created: lunes, 09 de octubre d                                      Te                                       o                                         t2                                         a0                                          l1                                            7                                            C                                              u9                                              r:                                               i2                                                e7                                                  :                                                  s0                                                   e8                                                    conds: 3793.00 (nominal)
+  Last Saved: lunes, 09 de octubre de                                       T2                                       o0                                        t1                                         a7                                          l                                             9                                            t:                                             r2                                              e2                                               a:                                                t5                                                 m1                                                  ent time: 379.30 s
+  Dose Calculation Medium: Homogeneous                                      Total time per PDR pulse: -
+  PDR pulse interval: -              PDR number of pulses: -
+  Applicator: tandem, Channel: 1, Source Model: GMP Ir-192 HDR, Tx Strength: 40700
+   Position [cm]129.00  128.50  128.00  127.50  127.00  126.50  126.00  125.50
+   Time [s]       44.0    16.5    21.2    20.3    20.3    20.5    18.1    31.5
+
+  Applicator: ovoide izq, Channel: 2, Source Model: GMP Ir-192 HDR, Tx Strength: 4
+   Position [cm]130.00  129.50  129.00
+   Time [s]       35.6    15.0    41.7
+
+  Applicator: ovoide der, Channel: 3, Source Model: GMP Ir-192 HDR, Tx Strength: 4
+   Position [cm]130.00  129.50  129.00
+   Time [s]       38.1    14.7    41.8
+
+
+
+  No seeds
+
+  Reference point: 
+                   x [cm] y [cm] z [cm] Total dose [cGy], 1 fraction(s)
+  vejiga3          0.06   -2.46  0.12   480.0
+  recto3
+                   x [cm] y [cm] z [cm] Total dose [cGy], 1 fraction(s)
+                   -0.40  2.65   -1.33  386.9
+                   -0.50  2.71   0.12   429.9
+  alar
+                   x [cm] y [cm] z [cm] Total dose [cGy], 1 fraction(s)
+                   -1.98  0.18   1.99   601.0
+                   2.06   0.18   1.98   598.7
+
+  ======================================
+  lunes, 09 de octubre de 2017 9:28:02     User: gal
+  ======================================
+  Imaging Geometry: Orthogonal
+  Beam1 Label: AP
+  Angle [deg]: 0.000
+  Focus To Film Dist [cm]: 115.000
+  Isocenter To Film Dist [cm]: 16.033
+  Magnification Factor: 1.162
+  Beam2 Label: LAT
+  Angle [deg]: 90.000
+  Focus To Film Dist [cm]: 140.000
+  Isocenter To Film Dist [cm]: 24.584
+  Magnification Factor: 1.213
+  Imaging Plane:Transversal
+
+  Geometrical information
+
+
+
+
+
+  Instituto de Oncologia Angel H. Roff                                      Po                                       r,                                        i                                          nB                                          tu                                           ee                                            dn                                              o                                              ls                                               u                                                 nA                                                 ei                                                  sr                                                   ,e                                                     s                                                     0,                                                      9                                                         A                                                        dr                                                         eg                                                           e                                                           on                                                            ct                                                             ti                                                              un                                                               ba                                                                re de 2017 11:30:34
+  Treatment plan of LILIANAAYUSA.                                                 
+  Plan name: Plan3 - ( Treatment Appro                                      Pv                                       ae                                        gd                                         e                                           :)                                              1/2
+                                      No seeds
+  BrachyVision                                          Varian Medical Systems
+  Software version: Brachytherapy Planning 11.0.47
+
+
+  No seeds
+  Points: tandem
+          x [cm] y [cm] z [cm]
+          0.04   0.09   3.91   (Dwell Position,   44.0 s)
+          0.04   0.17   3.41   (Dwell Position,   16.5 s)
+          0.03   0.20   2.92   (Dwell Position,   21.2 s)
+          0.02   0.21   2.42   (Dwell Position,   20.3 s)
+          0.03   0.18   1.92   (Dwell Position,   20.3 s)
+          0.04   0.15   1.42   (Dwell Position,   20.5 s)
+          0.05   0.11   0.92   (Dwell Position,   18.1 s)
+          0.06   0.07   0.42   (Dwell Position,   31.5 s)
+  Points: ovoide izq
+          x [cm] y [cm] z [cm]
+          1.24   -0.03  -0.56  (Dwell Position,   35.6 s)
+          1.22   -0.07  -1.06  (Dwell Position,   15.0 s)
+          1.21   -0.11  -1.56  (Dwell Position,   41.7 s)
+  Points: ovoide der
+          x [cm] y [cm] z [cm]
+          -1.62  0.03   -0.54  (Dwell Position,   38.1 s)
+          -1.58  -0.02  -1.04  (Dwell Position,   14.7 s)
+          -1.54  -0.07  -1.54  (Dwell Position,   41.8 s)
+
+
+  Electronic Approvals
+
+  Planning approved by: cp   Date: lunes, 09 de octubre de 2017 9:35:04
+  Treatment approved by: gal   Date: lunes, 09 de octubre de 2017 9:35:22
+  No seeds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Instituto de Oncologia Angel H. Roff                                      Po                                       r,                                        i                                          nB                                          tu                                           ee                                            dn                                              o                                              ls                                               u                                                 nA                                                 ei                                                  sr                                                   ,e                                                     s                                                     0,                                                      9                                                         A                                                        dr                                                         eg                                                           e                                                           on                                                            ct                                                             ti                                                              un                                                               ba                                                                re de 2017 11:30:34
+  Treatment plan of LILIANAAYUSA.                                                 
+  Plan name: Plan3 - ( Treatment Appro                                      Pv                                       ae                                        gd                                         e                                           :)                                              2/2
+                                      No seeds

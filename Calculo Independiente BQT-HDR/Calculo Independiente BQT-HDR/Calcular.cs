@@ -39,6 +39,27 @@ namespace Calculo_Independiente_BQT_HDR
             return directorFuente;
         }
 
+        public static Vector dF(Aplicador aplicador, Fuente fuente)
+        {
+            Vector directorFuente = new Vector();
+            int indiceFuente = aplicador.fuentes.IndexOf(fuente);
+            if (indiceFuente == 0)
+            {
+                directorFuente = difEntreFuentes(aplicador.fuentes[indiceFuente], aplicador.fuentes[indiceFuente + 1]);
+            }
+            else if (indiceFuente == aplicador.fuentes.Count() - 1)
+            {
+                directorFuente = difEntreFuentes(aplicador.fuentes[indiceFuente - 1], aplicador.fuentes[indiceFuente]);
+            }
+            else
+            {
+                Vector director1 = difEntreFuentes(aplicador.fuentes[indiceFuente], aplicador.fuentes[indiceFuente + 1]);
+                Vector director2 = difEntreFuentes(aplicador.fuentes[indiceFuente - 1], aplicador.fuentes[indiceFuente]);
+                directorFuente = Vector.promedio(director1, director2);
+            }
+            return directorFuente;
+        }
+
         public static List<Vector> directoresAplicador(Aplicador aplicador)
         {
             List<Vector> directores = new List<Vector>();
@@ -195,9 +216,23 @@ namespace Calculo_Independiente_BQT_HDR
                 dosisLinea(plan, l, tabla);
             }
         }
+        public static double calcularPrescripcion(Plan plan)
+        {
+            double suma = 0;
+            Linea lineaPrescripcion = plan.lineas[plan.lineas.Count() - 1];
+            foreach (PuntoDosis p in lineaPrescripcion.puntos)
+            {
+                suma += p.dosisTPS;
+            }
+            return suma / lineaPrescripcion.puntos.Count();
+        }
 
         public static void calcularTodo(string[] fid, Plan plan, TablaHyT tabla)
         {
+            plan.nombre = Extraer.extraerNombre(fid);
+            plan.ID = Extraer.extraerID(fid);
+            plan.prescripcion = Extraer.extraerPrescripcion(fid);
+            plan.fecha = DateTime.Today;
             plan.aplicadores = new List<Aplicador>();
             plan.lineas = new List<Linea>();
             plan.puntos = new List<PuntoDosis>();
@@ -206,7 +241,7 @@ namespace Calculo_Independiente_BQT_HDR
             tasasDosis(plan, tabla);
         }
 
-        public static List<HyT> listaHsyTs(Plan plan)
+        public static List<HyT> listaHsyTs(Plan plan, TablaHyT tabla)
         {
             List<HyT> lista = new List<HyT>();
             foreach (Aplicador ap in plan.aplicadores)
@@ -215,15 +250,23 @@ namespace Calculo_Independiente_BQT_HDR
                 {
                     foreach (PuntoDosis p in todosLosPuntos(plan))
                     {
-                        HyT hyt = new HyT()
+                        if (p.nombre == "  recto3_1")
                         {
-                            aplicador = ap.nombre,
-                            fuente = ap.fuentes.IndexOf(f),
-                            punto = p.nombre,
-                            H = paramH(ap, f, p),
-                            T = paramT(ap, f, p),
-                        };
-                        lista.Add(hyt);
+                            HyT hyt = new HyT()
+                            {
+                                directorSNx = Math.Round(dF(ap, f).x,2),
+                                directorSNy = Math.Round(dF(ap, f).y,2),
+                                directorSNz = Math.Round(dF(ap, f).z,2),
+                                aplicador = ap.nombre,
+                                fuente = ap.fuentes.IndexOf(f),
+                                punto = p.nombre,
+                                H = Math.Round(paramH(ap, f, p), 2),
+                                T = Math.Round(paramT(ap, f, p), 2),
+                                tasaDosis = Math.Round(tasaDosisHT(Math.Round(paramH(ap, f, p), 2), Math.Round(paramT(ap, f, p), 2),tabla),4),
+                            };
+                            lista.Add(hyt);
+                        }
+                        
                     }
                 }
             }

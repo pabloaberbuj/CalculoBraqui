@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 using System.Globalization;
+using System.Windows.Forms;
 
 namespace Calculo_Independiente_BQT_HDR
 {
@@ -12,7 +13,16 @@ namespace Calculo_Independiente_BQT_HDR
     {
         public static string[] cargar(string archivo)
         {
-            return File.ReadAllLines(archivo);
+            try
+            {
+                return File.ReadAllLines(archivo);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("No se ha podido abrir. Posiblemente el archivo esté en uso por otra aplicación\n\n" + e.ToString(),"Error abriendo el archivo");
+                throw;
+            }
+            
         }
 
         public static string extraerString(string[] fid, int linea, char sep ='=' )
@@ -99,7 +109,7 @@ namespace Calculo_Independiente_BQT_HDR
 
         public static int extraerAplicadores(string[] fid, List<Aplicador> aplicadores, int lineaInicio=0)
         {
-            int inicio = buscarSubStringEnFid(fid, "Geometrical information", lineaInicio)+1;
+            int inicio = buscarSubStringEnFid(fid, "Points:", lineaInicio);
             int fin = Array.IndexOf(fid, "", inicio);
             while (inicio<fin)
             {
@@ -124,13 +134,11 @@ namespace Calculo_Independiente_BQT_HDR
             return (extraerString(fid, linea, ':')).Split(sep, StringSplitOptions.None)[0];
         }
 
-        public static string extraerPrescripcion(string[] fid)
+        public static double extraerPrescripcion(string[] fid)
         {
             int linea = buscarSubStringEnFid(fid, "Total prescription: ");
             string[] sep = { "cGy" };
-            return (extraerString(fid, linea, ':')).Split(sep, StringSplitOptions.None)[0];
+            return Convert.ToDouble((extraerString(fid, linea, ':')).Split(sep, StringSplitOptions.None)[0]);
         }
-
-       
     }
 }
