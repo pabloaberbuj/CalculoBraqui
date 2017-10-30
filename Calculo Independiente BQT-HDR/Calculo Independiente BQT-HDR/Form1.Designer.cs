@@ -45,6 +45,7 @@
             this.CHB_Aplicadores = new System.Windows.Forms.CheckBox();
             this.CHB_DosisEnPuntos = new System.Windows.Forms.CheckBox();
             this.BT_Guardar = new System.Windows.Forms.Button();
+            this.BT_VerRegistros = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Aplicadores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Puntos)).BeginInit();
             this.SuspendLayout();
@@ -230,11 +231,22 @@
             this.BT_Guardar.UseVisualStyleBackColor = true;
             this.BT_Guardar.Click += new System.EventHandler(this.BT_Guardar_Click);
             // 
+            // BT_VerRegistros
+            // 
+            this.BT_VerRegistros.Location = new System.Drawing.Point(21, 466);
+            this.BT_VerRegistros.Name = "BT_VerRegistros";
+            this.BT_VerRegistros.Size = new System.Drawing.Size(95, 44);
+            this.BT_VerRegistros.TabIndex = 19;
+            this.BT_VerRegistros.Text = "Ver Registros";
+            this.BT_VerRegistros.UseVisualStyleBackColor = true;
+            this.BT_VerRegistros.Click += new System.EventHandler(this.VerRegistros_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(858, 514);
+            this.Controls.Add(this.BT_VerRegistros);
             this.Controls.Add(this.BT_Guardar);
             this.Controls.Add(this.CHB_DosisEnPuntos);
             this.Controls.Add(this.CHB_Aplicadores);
@@ -280,6 +292,7 @@
         private System.Windows.Forms.CheckBox CHB_Aplicadores;
         private System.Windows.Forms.CheckBox CHB_DosisEnPuntos;
         private System.Windows.Forms.Button BT_Guardar;
+        private System.Windows.Forms.Button BT_VerRegistros;
     }
 }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace Calculo_Independiente_BQT_HDR
 {
@@ -10,11 +11,11 @@ namespace Calculo_Independiente_BQT_HDR
     {
         //public static string file = @"..\..\registro.txt";
         public static string file = @"registro.txt";
-        public string nombre;
-        public string ID;
-        public double prescripcion;
-        public DateTime fecha;
-        public List<PuntoDosis> Puntos;
+        public string nombre { get; set; }
+        public string ID { get; set; }
+        public double prescripcion { get; set; }
+        public DateTime fecha { get; set; }
+        public List<PuntoDosis> Puntos { get; set; }
 
         public static Registro crear(string _nombre, string _ID, double _prescripcion, DateTime _fecha, List<PuntoDosis> _puntos)
         {

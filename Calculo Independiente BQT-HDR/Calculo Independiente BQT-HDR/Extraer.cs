@@ -92,7 +92,11 @@ namespace Calculo_Independiente_BQT_HDR
                     PuntoDosis punto = PuntoDosis.extraer(partes);
                     puntos.Add(punto);
                 }
-                else if (partes.Length == 1)
+                else if (partes.Length==0)
+                {
+                    inicio = fin;
+                }
+                else
                 {
                     int finLinea = buscarSubStringEnFid(fid, "x [cm] y [cm] z [cm] Total dose [cGy]", inicio+2)-2;
                     if (finLinea == -2)

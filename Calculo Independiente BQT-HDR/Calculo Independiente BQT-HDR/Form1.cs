@@ -22,6 +22,7 @@ namespace Calculo_Independiente_BQT_HDR
 
         private void BT_CargarClick(object sender, EventArgs e)
         {
+            deschequearTodo();
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Filter = "Archivos prn(.prn)|*.prn|All Files (*.*)|*.*";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -109,6 +110,21 @@ namespace Calculo_Independiente_BQT_HDR
                 throw;
             }
             
+        }
+
+        private void deschequearTodo()
+        {
+            CHB_Aplicadores.Checked = false;
+            CHB_DosisEnPuntos.Checked = false;
+            CHB_DosisPrescripta.Checked = false;
+            CHB_ID.Checked = false;
+            CHB_Nombre.Checked = false;
+        }
+
+        private void VerRegistros_Click(object sender, EventArgs e)
+        {
+            RegistrosForm rf = new RegistrosForm();
+            rf.ShowDialog();
         }
     }
 }
